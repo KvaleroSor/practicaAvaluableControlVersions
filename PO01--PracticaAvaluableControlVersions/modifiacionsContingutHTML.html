@@ -29,13 +29,27 @@
       <nav class="box2">
         <ul>
           <li class="li1"><a href="./home.html">Home</a></li>      
-          <li class="li2"><a href="./modifiacioContingutHTML.html">Modificació contingut HTML</a></li>
-          <li class="li4"><a href="./modificarAtributsHTML.html">Modificar atributs HTML</a></li>   
+          <li class="li2"><a href="./modifiacioContingutHTML.html">Modificació contingut HTML</a></li>    
         </ul>
       </nav>
     </header>
     <main>
-      <p>Main</p>
+        <h2>Modifiació del contingut HTML</h2>
+
+        <p>
+            JavaScript ens permet modificar còdig HTML durant l´execució del mateix, açò ens facilita
+            i ens dona molta versatilitat a l´hora de crear una pàgina web i d´interactuar amb 
+            l´usuari.
+
+            Maravilles de JavaScript!😁
+
+            En aquest còdig puguem vore que disposem d´un botó el qual en el moment siga presionat
+            s´afegirà al element "p" amb l´id demo un "Hello JavaScript!".
+        </p>
+
+        <p id="demo"></p>
+        
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
     </main>
     <footer>
       <p>Footer del sitio</p>
