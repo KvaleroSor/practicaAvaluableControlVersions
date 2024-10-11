@@ -6,6 +6,7 @@
     un repositori remot en la nostra area local què ens va a permetre treballar bé siga amb connexió com
     sense connexió i de forma totalment remota, sense afectar el nostre codi al codi font o dels
     nostres companys.
+    
     Una vegada hem fet tot el què deviem fer amb el codi confirmem de forma local els canvis realitzats i
     a continuació sincronitzem la copia del nostre repositori local amb el servidor remot. Fer-ho d´aquesta
     forma va a permetrems vore diferencies amb codi de companys o amb el codi font i poder avaluar que canvis
@@ -195,9 +196,9 @@
 
 ![clonacio repositori usuari 2](./CA02--CAPTURA_PANTALLA-2/1-%20clonant%20repositori.png)
 
-        · Creant la branca develop en local i traguent el contingut de la branca origin/develop.
+        · Creant la branca develop en local i és porta el contingut de la branca origin/develop.
 
-            És crea la branca develop en local traguent desde el repositori remot el contingut de la 
+            És crea la branca develop en local és porta desde el repositori remot el contingut de la 
             branca develop.
             Per asegurar-se de què la branca develop és queda actualitzada fem un pull a la branca origin.
 
@@ -210,8 +211,8 @@
 
         · Creació de les branques feature.
 
-            És creen les branques "feature/contingutHTML" i "feature/atributsHTML" per tal de fer les
-            modificacions pertinents en cada una de les branques.            
+            És creen les branques "feature/contingutHTML" i "feature/atributsHTML" per tal de fer 
+            les modificacions pertinents als arxius que ho requerixquen.            
 
                 - Comandos utilitzats: 
 
@@ -222,12 +223,13 @@
 
         · Afegint l´arxiu contingutsHTML.
 
-            La branca "feature/contingutsHTML" s´encarrega de crear a la barra de navegació de l´arxiu 
-            "index.html" un accés a una nova pàgina anomenada "Modificacions continguts HTML".
+            La branca "feature/contingutsHTML" s´encarrega de crear a la barra de navegació 
+            de l´arxiu "index.html" un accés a una nova pàgina anomenada "Modificacions continguts 
+            HTML".
             També es crea dit arxiu amb el seu contingut.
 
-            És fa commit i push de la mateixa per pujar les modificacions a la branca feature/contingutHTML
-            del repositori remot.
+            És fa commit i push de la mateixa per pujar les modificacions a la branca 
+            feature/contingutHTML del repositori remot.
 
                 - Comandos utilitzats:
 
@@ -248,8 +250,8 @@
             "index.html" un accés a una nova pàgina anomenada "Modificacions atributs HTML".
             També es crea dit arxiu amb el seu contingut.
 
-            És fa commit i push de la mateixa per pujar les modificacions a la branca feature/atributsHTML
-            del repositori remot.
+            És fa commit i push de la mateixa per pujar les modificacions a la branca 
+            feature/atributsHTML del repositori remot.
 
                 - Comandos utilitzats:
 
@@ -265,4 +267,81 @@
 ![afegint atributsHTML](./CA02--CAPTURA_PANTALLA-2/7-%20push%20feature:atributsHTML%20.png)
 
 
+### Tasques Usuari 3:
 
+        · Clonant repositori en el directori del Usuari 2.
+
+            És clona el repositori remot en l´area local on anem a treballar amb ell. 
+            
+            - Comando utilitzat: 
+
+                - git clone <url del repositori remot>
+
+![clonant repositori remot](./CA03--CAPTURA_PANTALLA-3/1-%20clonant%20repo.png)
+
+        · Creant la branca develop en local i és porta el contingut de la branca origin/develop.
+
+            És crea la branca develop en local és porta desde el repositori remot el contingut de la 
+            branca develop.
+            Per asegurar-se de què la branca develop és queda actualitzada fem un pull a la branca origin.
+
+            - Comando utilitzats: 
+
+                - git checkout -b develop origin/develop.
+                - git pull origin develop.
+    
+![creant branca develop](./CA03--CAPTURA_PANTALLA-3/2-%20descarregant%20a%20develop%20desde%20develop.png)
+
+        · Creació la branca feature/estilsCSS.
+
+            És crea la branca "feature/estilsCSS" per tal de fer les modificacions pertinents als arxius
+            que ho requerixquen.        
+
+                - Comandos utilitzats: 
+
+                    * git checkout -b feature/estilsCSS.  
+
+![creant branca feature/estilsCSS](./CA03--CAPTURA_PANTALLA-3/3-%20creant%20rama%20feature:estilsCSS%20desde%20develop.png)
+
+        · Afegint l´arxiu estilsCSS.
+
+            La branca "feature/estilsCSS" s´encarrega de crear a la barra de navegació de l´arxiu 
+            "index.html" un accés a una nova pàgina anomenada "Modificacions estils CSS".
+            També es crea dit arxiu amb el seu contingut.
+
+            És fa commit i push de la mateixa per pujar les modificacions a la branca 
+            feature/estilsCSS del repositori remot.
+
+                - Comandos utilitzats:
+
+                    * git add <nom del arxiu/directori on shan fet les modificacions>.
+                    * git commit (afegim un missatge amb la següent estructura:
+                    
+                        * Nom d´usuari - Títol del commit.
+
+                        * Breu descripció del que s´ha fet a la modificació.)                    
+                    * git push origin feature/estilsCSS.
+
+![afegint arxiu estilsCSS](./CA03--CAPTURA_PANTALLA-3/4-%20afegint%20arxius%20estilscss%20al%20repo%20.png)
+
+        · Missatge commmit de l´arxiu estilsCSS.
+
+![missatge commit](./CA03--CAPTURA_PANTALLA-3/5-%20missatge%20commit%20estilscss.png)
+
+        · Creació la branca release/v1.0.
+
+            És crea la branca "release/v1.0" per tal de agrupar totes les "features" fetes sobre
+            el codi font del projecte que es trobava a la branca develop.
+
+            Una vegada es fan les modificacions pertinents, l´usuari 3 és el encarregat de 
+            adjuntar dites "features" fetes per etiquetarles i resoldre possibles conflictes què 
+            puguen eixir.
+
+            En conclusió, preparar el còdigo per quan és decidixca aplicar en producció què estiga 
+            tot com toca.         
+
+                - Comandos utilitzats: 
+
+                    * git checkout -b release/v1.0.
+
+![creant branca release](./CA03--CAPTURA_PANTALLA-3/6-%20creant%20branca%20release:v1.0.png)
