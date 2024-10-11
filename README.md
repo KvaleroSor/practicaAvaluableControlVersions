@@ -89,7 +89,7 @@
             - Comandos utilitzats: 
 
                 - git add <nom del directori on es troba la "boilerplate">
-                - git commit (afegim un missatge amb la següent estructura
+                - git commit (afegim un missatge amb la següent estructura:
                     
                     * Nom d´usuari - Títol del commit.
 
@@ -181,3 +181,88 @@
 
 ![usuari git antic](./CA01--CAPTURA_PANTALLA-1/12-%20justificant%20canvi%20d´usuari%20a%20git.png)
 ![usuari git nou](./CA01--CAPTURA_PANTALLA-1/13-%20justificant%20canvi%20d´usuari%20a%20git%202.png)
+
+
+### Tasques Usuari 2:
+
+        · Clonant repositori en el directori del Usuari 2.
+
+            És clona el repositori remot en l´area local on anem a treballar amb ell. 
+            
+            - Comando utilitzat: 
+
+                - git clone <url del repositori remot>
+
+![clonacio repositori usuari 2](./CA02--CAPTURA_PANTALLA-2/1-%20clonant%20repositori.png)
+
+        · Creant la branca develop en local i traguent el contingut de la branca origin/develop.
+
+            És crea la branca develop en local traguent desde el repositori remot el contingut de la 
+            branca develop.
+            Per asegurar-se de què la branca develop és queda actualitzada fem un pull a la branca origin.
+
+            - Comando utilitzats: 
+
+                - git checkout -b develop origin/develop.
+                - git pull origin develop.
+
+![creant i duguent develop de origin](./CA02--CAPTURA_PANTALLA-2/2-%20descarregant%20repo%20de%20rama%20develop%20a%20local%20develop.png)
+
+        · Creació de les branques feature.
+
+            És creen les branques "feature/contingutHTML" i "feature/atributsHTML" per tal de fer les
+            modificacions pertinents en cada una de les branques.            
+
+                - Comandos utilitzats: 
+
+                    * git checkout -b feature/contingutsHTML.
+                    * git checkout -b feature/atributsHTML.
+
+![creació branques feature](./CA02--CAPTURA_PANTALLA-2/3-%20creacio%20branques%20feature.png)
+
+        · Afegint l´arxiu contingutsHTML.
+
+            La branca "feature/contingutsHTML" s´encarrega de crear a la barra de navegació de l´arxiu 
+            "index.html" un accés a una nova pàgina anomenada "Modificacions continguts HTML".
+            També es crea dit arxiu amb el seu contingut.
+
+            És fa commit i push de la mateixa per pujar les modificacions a la branca feature/contingutHTML
+            del repositori remot.
+
+                - Comandos utilitzats:
+
+                    * git add <nom del arxiu/directori on shan fet les modificacions>.
+                    * git commit (afegim un missatge amb la següent estructura:
+                    
+                        * Nom d´usuari - Títol del commit.
+
+                        * Breu descripció del que s´ha fet a la modificació.)                    
+                    * git push origin feature/contingutsHTML.
+
+![afegint contingutsHTML](./CA02--CAPTURA_PANTALLA-2/4-%20usuari%202%20afegint%20continguthtml%20i%20commit.png)
+![afegint contingutsHTML](./CA02--CAPTURA_PANTALLA-2/5-%20push%20feature:contingutHTML.png)
+
+        · Afegint l´arxiu contingutsHTML.
+
+            La branca "feature/atributsHTML" s´encarrega de crear a la barra de navegació de l´arxiu 
+            "index.html" un accés a una nova pàgina anomenada "Modificacions atributs HTML".
+            També es crea dit arxiu amb el seu contingut.
+
+            És fa commit i push de la mateixa per pujar les modificacions a la branca feature/atributsHTML
+            del repositori remot.
+
+                - Comandos utilitzats:
+
+                    * git add <nom del arxiu/directori on shan fet les modificacions>.
+                    * git commit (afegim un missatge amb la següent estructura:
+                    
+                        * Nom d´usuari - Títol del commit.
+
+                        * Breu descripció del que s´ha fet a la modificació.)                    
+                    * git push origin feature/atributsHTML.
+
+![afegint atributsHTML](./CA02--CAPTURA_PANTALLA-2/6-%20usuari%202%20afegint%20atributsHTML%20i%20commit.png)
+![afegint atributsHTML](./CA02--CAPTURA_PANTALLA-2/7-%20push%20feature:atributsHTML%20.png)
+
+
+
