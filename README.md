@@ -6,7 +6,7 @@
     un repositori remot en la nostra area local què ens va a permetre treballar bé siga amb connexió com
     sense connexió i de forma totalment remota, sense afectar el nostre codi al codi font o dels
     nostres companys.
-    Una vegada hem fet tot el què devien fer amb el codi confirmem de forma local els canvis realitzats i
+    Una vegada hem fet tot el què deviem fer amb el codi confirmem de forma local els canvis realitzats i
     a continuació sincronitzem la copia del nostre repositori local amb el servidor remot. Fer-ho d´aquesta
     forma va a permetrems vore diferencies amb codi de companys o amb el codi font i poder avaluar que canvis
     interessen implementar i quins no, alguns del canvis podrien ser errates que gràcies al sistema que
@@ -50,7 +50,7 @@
 
 ## Explicació detallada del procés realitzat.
 
-    ### Tasques Usuari 1: 
+### Tasques Usuari 1: 
 
         · Creació del repositori: practicaAvaluableControlVersions.
 
