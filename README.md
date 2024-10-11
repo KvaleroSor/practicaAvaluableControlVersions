@@ -53,7 +53,7 @@
 
 ### Tasques Usuari 1: 
 
-        · Creació del repositori: practicaAvaluableControlVersions.
+#### Creació del repositori: practicaAvaluableControlVersions.
 
             És crea el repositori remot en GitHub on volem iniciar el nostre projecte, s´afegeix el nom i 
             l´arxiu README.md.
