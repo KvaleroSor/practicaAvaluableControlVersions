@@ -12,7 +12,7 @@
     interessen implementar i quins no, alguns del canvis podrien ser errates que gràcies al sistema que
     implementa Git és pot avaluar abans de canviar el codi font.
 
-    ####Característiques de Git.
+#### Característiques de Git.
 
         - branques.
         - Confirmacions d´arxius.
@@ -167,7 +167,7 @@
 ![Missatge commit millores aplicades](./CA01--CAPTURA_PANTALLA-1/11-%20missatge%20commit%20millores.png)
 
 
-    ### Observacions
+### Observacions
 
         És podrá vore al repositori remot que hi ha dos colaboradors, son la mateixa persona, es a dir, jo. 
         
