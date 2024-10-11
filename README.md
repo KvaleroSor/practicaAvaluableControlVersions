@@ -51,7 +51,7 @@
 
 ## Explicació detallada del procés realitzat.
 
-    ![Image exemple](./CA01--CAPTURA_PANTALLA-1/1-%20creant%20repo.png)
+    ![Image exemple]("./CA01--CAPTURA_PANTALLA-1/1- creant repo.png")
 
     
 
