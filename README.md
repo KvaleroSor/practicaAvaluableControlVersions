@@ -337,7 +337,7 @@
             adjuntar dites "features" fetes per etiquetarles i resoldre possibles conflictes què 
             puguen eixir.
 
-            En conclusió, preparar el còdigo per quan és decidixca aplicar en producció què estiga 
+            En conclusió, preparar el codi per quan és decidixca aplicar a producció què estiga 
             tot com toca.         
 
                 - Comandos utilitzats: 
@@ -345,3 +345,98 @@
                     * git checkout -b release/v1.0.
 
 ![creant branca release](./CA03--CAPTURA_PANTALLA-3/6-%20creant%20branca%20release:v1.0.png)
+
+        · Creant branques "feature/contingutHTML" i "feature/atributsHTML".
+
+            És creen les branques "feature/contingutHTML" i "feature/atributsHTML" desde el
+            el repositori remot per a que arrastren amb si mateixa l´última actualització
+            del codi que hi haja a les mateixes branques.
+
+                - Comandos utilitzats: 
+
+                    * git checkout -b feature/contingutHTML origin/feature/contingutHTML.
+                    * git checkout -b feature/atributsHTML origin/feature/atributsHTML.
+
+![creant branques feature en release](./CA03--CAPTURA_PANTALLA-3/7-%20creant%20branques%20feature%20al%20usuari%203%20amb%20contingt.png)
+
+        · Merge de les branques "feature" a la branca "release".
+
+            Si a l´hora de fer el "merge" ens trobem amb conflictes entre diferents arxius
+            els resolguem desde l´editor.
+
+            Per realitzar el "merge" ens situarem en la branca "release".
+
+            Una vegada fet el "merge" i resolts els conflictes puguem vore l´estat dels 
+            canvits que hem realitzat.
+
+            Si hi han canvis per confirmar, el que farem serà actualitzar el nostre repositori 
+            local per tindre-ho tot com toca abans de pujar-ho a la branca remota.
+
+                - Comandos utilitzats:
+
+                    * git merge feature/congtingutsHTML. 
+                    * git merge feature/atributsHTML.
+                    * git status.
+                    * git add <nom dels arxius/directoris implicats>
+                    * git commit (afegim un missatge amb la següent estructura:
+                    
+                        * Nom d´usuari - Títol del commit.
+
+                        * Breu descripció del que s´ha fet a la modificació.) 
+                    * git push origin release/v1.0.
+
+        · Merge de "feature/contingutHTML".
+
+![merge feature/contingutHTML](./CA03--CAPTURA_PANTALLA-3/10-%20merge%20feature:contingutHTML.png)
+
+        · Merge de "feature/atributsHTML".
+
+![merge feature/atributsHTML](./CA03--CAPTURA_PANTALLA-3/9-%20merge%20feature:atributeHTML.png)
+
+        · Merge de "feature/estilsCSS".
+
+![merge feature/estilsCSS](./CA03--CAPTURA_PANTALLA-3/11-%20merge%20feature:estilsCSS.png)
+
+        · Resolguent conflicte una vegada fer el "merge".
+
+![resolguent conflicte](./CA03--CAPTURA_PANTALLA-3/8-%20resolguent%20conflicte%20merge.png)
+
+        · Creació de l´etiqueta per a la release.
+
+            Per crear la etiqueta de la release haurem de situar-se a la branca de la 
+            mateixa release a la que vullguem crear l´etiqueta. Una vegada situats a la 
+            branca que toca, creem l´etiqueta.
+
+            La finalitat de crear una etiqueta per a la release és per tindre-ho identificat,
+            es suposa que el codi què és troba a la branca release és codi estabilitzat i 
+            preparart per ser llançat a producció, aleshores, necessitem saber en tot moment
+            de la versió què és tracta, per dur un bon control i seguiment de les modificacions
+            què s´han anat fent en quines versions han sigut.
+
+            Per crear el tag del release ho fem situats a la branca "release".
+
+                - Comandos utilitzats: 
+
+                    * git tag -a v1.0 "release/v1.0".
+                    * git push origin v1.0.
+
+![creant tag release](./CA03--CAPTURA_PANTALLA-3/12-%20git%20tag%20amb%20contingut.png)
+
+        · Creació del release.
+
+            Una vegada creada el "tag del release" proseguim a crear el mateix "release".
+
+                - Comandos utilitzats: 
+
+                    * gh release create release/v1.0 --target <nom de la branca (en el nostre cas "release")> --title "<títol de la release> --notes <features que es veuen involucrades en la release>.
+
+![creació release](./CA03--CAPTURA_PANTALLA-3/13-%20creant%20release.png)
+
+        · Contingut de la "release" creada.
+
+![contingut release creada](./CA03--CAPTURA_PANTALLA-3/14-%20contingut%20release.png)            
+
+            
+            
+
+        
