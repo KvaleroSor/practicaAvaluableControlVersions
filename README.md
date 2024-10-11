@@ -59,7 +59,7 @@
 
 ![Creació repositori](./CA01--CAPTURA_PANTALLA-1/1-creantrepo.png)
 
-### Clonant el repositori remot en l´area local.
+#### Clonant el repositori remot en l´area local.
 
 És clona el repositori remot en l´area local on anem a treballar amb ell.
 
