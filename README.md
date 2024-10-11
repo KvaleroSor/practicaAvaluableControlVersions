@@ -48,6 +48,11 @@
     projecte molt fàcil d´interpretar i de seguir per si a futur d´altres persones què no han estat en un principi en la 
     creació de dit projecte necessiten treballar sobre ell.
 
+
+## Explicació detallada del procés realitzat.
+
+    ![Image exemple](./CA01--CAPTURA_PANTALLA-1/1-%20creant%20repo.png)
+
     
 
 
