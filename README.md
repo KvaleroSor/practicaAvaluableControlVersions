@@ -14,7 +14,7 @@
 
 #### Característiques de Git.
 
-        - branques.
+        - Branques.
         - Confirmacions d´arxius.
         - Desenvolupament simultani.
         - Integració incorporada.
@@ -167,7 +167,7 @@
 ![Missatge commit millores aplicades](./CA01--CAPTURA_PANTALLA-1/11-%20missatge%20commit%20millores.png)
 
 
-### Observacions
+### Observacions.
 
         És podrá vore al repositori remot que hi ha dos colaboradors, son la mateixa persona, es a dir, jo. 
         
