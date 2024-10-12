@@ -55,7 +55,7 @@
 
 #### Creació del repositori: practicaAvaluableControlVersions.
 
-    És crea el repositori remot en GitHub on volem iniciar el nostre projecte, s´afegeix el nom i l´arxiu README.md.
+És crea el repositori remot en GitHub on volem iniciar el nostre projecte, s´afegeix el nom i l´arxiu README.md.
 
 ![Creació repositori](./CA01--CAPTURA_PANTALLA-1/1-creantrepo.png)
 
@@ -103,8 +103,8 @@ un codi font base del projecte.
 
 #### Metodologia GitFlow. Creació de les branques "feature", "release" i "Hoffix" i push de les mateixes.
 
-És creen les branques "feature", "release" i "hotfix" al repo local i es fa un push
-per pujarles al repositori remot, de tal forma què estiguen disponibles per a la resta
+És creen les branques "feature", "release" i "hotfix" al repositori local i es fa un push
+per pujar-les al repositori remot, de tal forma què estiguen disponibles per a la resta
 de companys.
 
     - Comandos utilitzats:
@@ -135,7 +135,7 @@ L´usuari 1 crea un "hotfix/milloresV_1_0" per realitzar millor al codi que ha c
 l´usuari 2.
 
 L´usuari 1 es porta les branques que ha utilitzat l´usuari 2 per poder fer desprès la
-fusió dels canis.
+fusió dels canvis.
 
 Una vegada disposa del codi que ha creat l´usuari 2 a la branca "hotfix/milloresV_1_0"
 efectua els canvis que considera oportuns.
@@ -167,13 +167,13 @@ forma manual al editor i actualitzem l´arxiu afegint-lo al stage i fent un comm
 
 ### Observacions.
 
-És podrá vore al repositori remot que hi ha dos colaboradors, son la mateixa persona, es a dir, jo.
+És podrà vore al repositori remot que hi ha dos col·laboradors, son la mateixa persona, es a dir, jo.
 
 Abans de començar el curs gastava un altre usuari de git per a iniciar-me en la tecnologia ja què la
 conec de fa alguns anys però fins hores d´ara no sabia gastar-la "com es degut".
 
 Tenia el git configurat amb eixe usuari i email, més avant ja entrats en el curs vaig decidir
-crear-me´n un altre conter de git per tindren un un poc mes "professional" amb els coneiximents què anaba
+crear-me´n un altre conter de git per tindre un un poc mes "professional" amb els coneiximents què anava
 a adquirir al curs.
 He tornat a configurar l´usuari i el email i ho adjunte per evitar que hi hagen confusions.
 
@@ -196,7 +196,7 @@ He tornat a configurar l´usuari i el email i ho adjunte per evitar que hi hagen
 
 És crea la branca develop en local és porta desde el repositori remot el contingut de la
 branca develop.
-Per asegurar-se de què la branca develop és queda actualitzada fem un pull a la branca origin.
+Per assegurar-se de què la branca develop és queda actualitzada fem un pull a la branca origin.
 
     - Comando utilitzats:
 
@@ -208,7 +208,7 @@ Per asegurar-se de què la branca develop és queda actualitzada fem un pull a l
 #### Creació de les branques feature.
 
 És creen les branques "feature/contingutHTML" i "feature/atributsHTML" per tal de fer
-les modificacions pertinents als arxius que ho requerixquen.
+les modificacions pertinents als arxius que ho requerisquen.
 
     - Comandos utilitzats:
 
@@ -278,7 +278,7 @@ feature/atributsHTML del repositori remot.
 
 És crea la branca develop en local és porta desde el repositori remot el contingut de la
 branca develop.
-Per asegurar-se de què la branca develop és queda actualitzada fem un pull a la branca origin.
+Per assegurar-se de què la branca develop és queda actualitzada fem un pull a la branca origin.
 
     - Comando utilitzats:
 
@@ -290,7 +290,7 @@ Per asegurar-se de què la branca develop és queda actualitzada fem un pull a l
 #### Creació la branca feature/estilsCSS.
 
 És crea la branca "feature/estilsCSS" per tal de fer les modificacions pertinents als arxius
-que ho requerixquen.
+que ho requerisquen.
 
     - Comandos utilitzats:
 
@@ -329,10 +329,10 @@ feature/estilsCSS del repositori remot.
 el codi font del projecte que es trobava a la branca develop.
 
 Una vegada es fan les modificacions pertinents, l´usuari 3 és el encarregat de
-adjuntar dites "features" fetes per etiquetarles i resoldre possibles conflictes què
+adjuntar dites "features" fetes per etiquetar-les i resoldre possibles conflictes què
 puguen eixir.
 
-En conclusió, preparar el codi per quan és decidixca aplicar a producció què estiga
+En conclusió, preparar el codi per quan és decidisca aplicar a producció què estiga
 tot com toca.
 
     - Comandos utilitzats:
@@ -344,7 +344,7 @@ tot com toca.
 #### Creant branques "feature/contingutHTML" i "feature/atributsHTML".
 
 És creen les branques "feature/contingutHTML" i "feature/atributsHTML" desde el
-el repositori remot per a que arrastren amb si mateixa l´última actualització
+el repositori remot perquè arrastren amb si mateixa l´última actualització
 del codi que hi haja a les mateixes branques.
 
     - Comandos utilitzats:
@@ -362,7 +362,7 @@ els resolguem desde l´editor.
 Per realitzar el "merge" ens situarem en la branca "release".
 
 Una vegada fet el "merge" i resolts els conflictes puguem vore l´estat dels
-canvits que hem realitzat.
+canvis que hem realitzat.
 
 Si hi han canvis per confirmar, el que farem serà actualitzar el nostre repositori
 local per tindre-ho tot com toca abans de pujar-ho a la branca remota.
@@ -404,7 +404,7 @@ branca que toca, creem l´etiqueta.
 
 La finalitat de crear una etiqueta per a la release és per tindre-ho identificat,
 es suposa que el codi què és troba a la branca release és codi estabilitzat i
-preparart per ser llançat a producció, aleshores, necessitem saber en tot moment
+preparar per ser llançat a producció, aleshores, necessitem saber en tot moment
 de la versió què és tracta, per dur un bon control i seguiment de les modificacions
 què s´han anat fent en quines versions han sigut.
 
